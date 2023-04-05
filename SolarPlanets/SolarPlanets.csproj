@@ -48,6 +48,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Remove="Resources\Images\apipic.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Folder Include="Resources\Fonts\" />
 	</ItemGroup>
 

@@ -3,10 +3,128 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.PlanetsPage"
              Title="PlanetsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+
+        <!--Menu-->
+        <Grid
+            x:Name="MenuContainer">
+
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#666" Offset="0.0" />
+                    <GradientStop Color="#000" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <!--<Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="GridArea_Tapped" />
+            </Grid.GestureRecognizers>-->
+
+            <VerticalStackLayout
+                Margin="0,52,24,0"
+                HorizontalOptions="End"
+                Spacing="20">
+
+                <Label
+                    Text="MENU"
+                    Style="{StaticResource PageHeaderStyle}"
+                    HorizontalOptions="End"/>
+
+                <Label
+                    Text="Option 1 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label
+                    Text="Option 2 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label
+                    Text="Option 3 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label
+                    Text="Option 4 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label
+                    Text="Option 5 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label
+                    Text="Option 6 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+            </VerticalStackLayout>
+
+        </Grid>
+
+        <!--Main Content-->
+
+        <Grid
+            x:Name="MainContentGrid"
+            Padding="24,52,24,0"
+            BackgroundColor="{StaticResource PageBackgroundColor}"
+            ColumnDefinitions="*, Auto"
+            RowDefinitions="Auto,*">
+
+            <!--Header text-->
+            <VerticalStackLayout
+                Spacing="4"
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="Center">
+
+                <Label
+                    Style="{StaticResource PageHeaderStyle}"
+                    Text="Let's Explore" />
+
+                <Label
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    Text="The solar system" />
+
+            </VerticalStackLayout>
+
+            <Border
+                WidthRequest="56"
+                HeightRequest="56"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                Stroke="{StaticResource LightBorderColor}"
+                StrokeThickness="6"
+                Grid.Row="0"
+                Grid.Column="1">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="28" />
+                </Border.StrokeShape>
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ApiPic_Clicked" />
+                </Border.GestureRecognizers>
+
+                <Image
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Source="apipic.png">
+
+                    <Image.Clip>
+                        <EllipseGeometry
+                            Center="25,25"
+                            RadiusX="25"
+                            RadiusY="25" />
+                    </Image.Clip>
+                </Image>
+            </Border>
+
+        </Grid>
+
+    </Grid>
 </ContentPage>
