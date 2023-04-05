@@ -39,7 +39,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -49,14 +48,38 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Views\"/>
-		<Folder Include="Resources\Fonts\"/>
+		<Folder Include="Resources\Fonts\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiXaml Update="Views\StartPage.xaml">
+		<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Montserrat-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Montserrat-Medium.ttf" />
 	  <None Remove="Resources\Fonts\Montserrat-SemiBold.ttf" />
+	  <None Remove="Resources\Images\earth.svg" />
+	  <None Remove="Resources\Images\imgback.png" />
+	  <None Remove="Resources\Images\imgexplore.png" />
+	  <None Remove="Resources\Images\imgfavorite.png" />
+	  <None Remove="Resources\Images\imgmenu.png" />
+	  <None Remove="Resources\Images\imgsearch.png" />
+	  <None Remove="Resources\Images\jupiter.svg" />
+	  <None Remove="Resources\Images\mars.svg" />
+	  <None Remove="Resources\Images\mercury.svg" />
+	  <None Remove="Resources\Images\neptune.svg" />
+	  <None Remove="Resources\Images\saturn.svg" />
+	  <None Remove="Resources\Images\uranus.svg" />
+	  <None Remove="Resources\Images\venus.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\StartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
