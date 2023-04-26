@@ -97,12 +97,12 @@
                 Grid.Column="1">
 
                 <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="28" />
+                    <RoundRectangle CornerRadius="50" />
                 </Border.StrokeShape>
 
-                <Border.GestureRecognizers>
+                <!--Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="ApiPic_Clicked" />
-                </Border.GestureRecognizers>
+                </Border.GestureRecognizers>-->              
 
                 <Image
                     VerticalOptions="Center"
