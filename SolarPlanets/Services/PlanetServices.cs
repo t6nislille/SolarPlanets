@@ -123,7 +123,7 @@
                 Name = " Neptune",
                 Subtitle = "   Eighth & fathest-away",
                 HeroImage = "neptune.png",
-                Description = "Imagine being so good at math that you could figure out the location of a planet you had never even seen! That is what John C. Adams did in 1843 when he discovered Neptune.",
+                Description = "Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations.",
                 AccentColorStart = Color.FromArgb("#0c293d"),
                 AccentColorEnd = Color.FromArgb("#26abe0"),
                 Images = new()
@@ -131,6 +131,86 @@
                     "https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg",
                     "https://solarsystem.nasa.gov/system/feature_items/images/86_carousel_neptune_5.jpg",
                     "https://solarsystem.nasa.gov/system/feature_items/images/84_neptune_carousel_2.jpg"
+                }
+            },
+
+            new()
+            {
+                Name = " Pluto",
+                Subtitle = "   The only world named by an 11-year-old girl",
+                HeroImage = "pluto.png",
+                Description = "Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the best known of a new class of worlds called dwarf planets.",
+                AccentColorStart = Color.FromArgb("#00008B"),
+                AccentColorEnd = Color.FromArgb("#000000"),
+                Images = new()
+                {
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckFEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1120618ad30f3328931c4d666bd1087ae9998d7b/PIA20213_1200w.jpg?disposition=attachment",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0FGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa3ee29d4094fd4a72b211b24a013a0697ef6c65/pluto_lorri_ralph_20150713_2017.jpg",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczhFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--26a2b6f6e25196e5f47858d8f1865fb9b520c049/nh-apluto-mountains-plains-9-17-15_0.jpg"
+                }
+            },
+
+            new()
+            {
+                Name = " Ceres",
+                Subtitle = "   From a asteroid to a dwarf",
+                HeroImage = "ceres.png",
+                Description = "Ceres makes up almost a third of the asteroid belt's total mass, but it is still far smaller than Earth's Moon. Ceres is heavily cratered with large amounts of ice underground.",
+                AccentColorStart = Color.FromArgb("#D3D3D3"),
+                AccentColorEnd = Color.FromArgb("#696969"),
+                Images = new()
+                {
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczRHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e1ba19d37ddff74f0b44a1061e61b7314a430c73/PIA22480_hires.jpg?disposition=attachment",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e96b10366d38fc63f0ad9aa1d3c96100710f5150/PIA22761_hires.jpg",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a2a1208ab2f29f1bd20ea56db2f40511dcc9874/PIA22642_hires.jpg"
+                }
+            },
+
+            new()
+            {
+                Name = " Makemake",
+                Subtitle = "   Second-brightest object",
+                HeroImage = "makemake.png",
+                Description = "Along with fellow dwarf planets Pluto, Eris, and Haumea, Makemake is located in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune.",
+                AccentColorStart = Color.FromArgb("#ADD8E6"),
+                AccentColorEnd = Color.FromArgb("#9370DB"),
+                Images = new()
+                {
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclJPIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8124d169f5d84df689d662d4a5b584dafae25be5/Makemake_moon.jpeg",
+                    "https://www.universetoday.com/wp-content/uploads/2008/07/Makemake-1280x720.jpg",
+                    "https://solarsystem.nasa.gov/system/stellar_items/image_files/705_feature_1600x900_makemake.jpg"
+                }
+            },
+
+            new()
+            {
+                Name = " Haumea",
+                Subtitle = "   Santa",
+                HeroImage = "haumea.png",
+                Description = "Originally designated 2003 EL61 (and nicknamed Santa by one discovery team), Haumea is located in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune.",
+                AccentColorStart = Color.FromArgb("#D2B48C"),
+                AccentColorEnd = Color.FromArgb("#8B4513"),
+                Images = new()
+                {
+                    "https://scx1.b-cdn.net/csz/news/800a/2017/59de5fc415107.jpg",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lSIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75ac289f8ffa148b3f12097ebadc2291782633a2/haumea_th.jpg",
+                    "https://static.wikia.nocookie.net/expanse/images/1/1f/Haumea_in_Celestia.jpg/revision/latest?cb=20200206143331"
+                }
+            },
+
+            new()
+            {
+                Name = " Eris",
+                Subtitle = "   Pluto-sized world",
+                HeroImage = "eris.png",
+                Description = "Eris is one of the largest known dwarf planets in our solar system. It's about the same size as Pluto, but it is three times farther from the Sun. One orbit takes about 557 years.",
+                AccentColorStart = Color.FromArgb("#4B0082"),
+                AccentColorEnd = Color.FromArgb("#8B0000"),
+                Images = new()
+                {
+                    "https://cdn.eso.org/images/screen/eso1142a.jpg",
+                    "https://theplanets.org/123/2021/10/Eris-Facts.png",
+                    "https://www.tornado-studios.com/sites/default/files/styles/slider_full/public/products/498/gallery/eris_thumbnail_square0000.jpg"
                 }
             }
         };
