@@ -34,8 +34,8 @@
             HorizontalOptions="Start"
             TranslationX="-100"
             TranslationY="-64"
-            WidthRequest="200"
-            HeightRequest="200"/>
+            WidthRequest="220"
+            HeightRequest="1800"/>
 
         <Image
             x:Name="imgSaturn"
