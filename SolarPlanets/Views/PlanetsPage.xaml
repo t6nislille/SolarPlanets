@@ -94,8 +94,8 @@
             <!--App picture-->
 
             <Border
-                WidthRequest="56"
-                HeightRequest="56"
+                WidthRequest="110"
+                HeightRequest="110"
                 VerticalOptions="Center"
                 HorizontalOptions="End"
                 Stroke="{StaticResource LightBorderColor}"
@@ -114,15 +114,15 @@
                 <Image
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
-                    WidthRequest="50"
-                    HeightRequest="50"
+                    WidthRequest="110"
+                    HeightRequest="110"
                     Source="apipic.png">
 
                     <Image.Clip>
                         <EllipseGeometry
-                            Center="25,25"
-                            RadiusX="25"
-                            RadiusY="25" />
+                            Center="50,50"
+                            RadiusX="50"
+                            RadiusY="50" />
                     </Image.Clip>
                 </Image>
             </Border>

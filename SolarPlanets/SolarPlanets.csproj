@@ -32,7 +32,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="F9F6EE" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -58,6 +58,7 @@
 		<None Remove="Resources\Images\ceres.png" />
 		<None Remove="Resources\Images\eris.png" />
 		<None Remove="Resources\Images\haumea.png" />
+		<None Remove="Resources\Images\imgprofile.png" />
 		<None Remove="Resources\Images\makemake.png" />
 		<None Remove="Resources\Images\pluto.png" />
 	</ItemGroup>
