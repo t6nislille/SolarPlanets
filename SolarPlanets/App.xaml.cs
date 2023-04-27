@@ -8,8 +8,8 @@ namespace SolarPlanets;
 
 public partial class App : Application
 {
-	const int WindowWidth = 540;
-    const int WindowHeight = 1100;
+	const int WindowWidth = 700;
+    const int WindowHeight = 1400;
     public App()
 	{
 		InitializeComponent();
