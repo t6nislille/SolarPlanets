@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
 namespace SolarPlanets.Models
 {
@@ -20,17 +16,19 @@ namespace SolarPlanets.Models
         {
             get
             {
-                var gradientStops = new GradientStopCollection
-                {
-                    new GradientStop(AccentColorStart, 0.0f),
-                    new GradientStop(AccentColorEnd, 1.0f)
-                };
-                var bgBrush = new LinearGradientBrush(gradientStops, new Point(0.0, 0.0), new Point(1.0, 1.0));
+                var gradientStops = new GradientStopCollection();
+                gradientStops.Add(new GradientStop(AccentColorStart, 0.0f));
+                gradientStops.Add(new GradientStop(AccentColorEnd, 1.0f));
+
+                var bgBrush = new LinearGradientBrush(
+                    gradientStops,
+                    new Point(0.0, 0.0),
+                    new Point(1.0, 1.0));
 
                 return bgBrush;
             }
         }
     }
 }
-    
+
 

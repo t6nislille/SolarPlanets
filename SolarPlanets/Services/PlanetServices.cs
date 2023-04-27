@@ -1,7 +1,6 @@
-﻿using SolarPlanets.Models;
-namespace SolarPlanets.Services
+﻿namespace SolarPlanets.Services
 {
-    internal class PlanetServices
+    internal static class PlanetServices
     {
         private static List<Planet> planets = new()
         {
@@ -136,21 +135,15 @@ namespace SolarPlanets.Services
             }
         };
 
-        public static List<Planet> GetAllPlanets()
-        {
-            return planets;
-        }
-
-        public static Planet GetPlanet(string planetName)
-        {
-            return planets.Where(planet => planet.Name == planetName).FirstOrDefault();
-        }
-
         public static List<Planet> GetFeaturedPlanets()
         {
-            var randomizedPlanets = planets.OrderBy(item => new Random().Next());
+            var random = new Random();
+            var randomizedPlanets = planets.OrderBy(item => random.Next());
 
             return randomizedPlanets.Take(2).ToList();
         }
+
+        public static List<Planet> GetAllPlanets()
+            => planets;
     }
 }

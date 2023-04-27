@@ -46,7 +46,12 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
-
+	
+	<!--
+	<ItemGroup>
+		<PackageReference Include="Microsoft.UI.Xaml" Version="2.8.2" />
+	</ItemGroup>
+	-->
 	<ItemGroup>
 		<None Remove="Resources\Images\apipic.png" />
 	</ItemGroup>
@@ -84,12 +89,6 @@
 	  <None Remove="Resources\Images\saturn.svg" />
 	  <None Remove="Resources\Images\uranus.svg" />
 	  <None Remove="Resources\Images\venus.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="Views\StartPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

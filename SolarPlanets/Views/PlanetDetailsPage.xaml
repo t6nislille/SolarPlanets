@@ -1,17 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:models="clr-namespace:Models"
-             x:Class="Views.PlanetDetailsPage"
-             x:DataType="models:Planet"
+             x:Class="SolarPlanets.Views.PlanetDetailsPage"
              Title="Planet Details">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#666" Offset="0.0" />
+            <GradientStop Color="#000" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
     <Grid
         Margin="24,52,24,0"
         ColumnDefinitions="*,*"
         RowDefinitions="Auto,*">
 
-        <ImageButton
+        <ImageButton 
             WidthRequest="24"
             HeightRequest="24"
             Source="imgback.png"
@@ -30,6 +35,7 @@
             HorizontalOptions="End"
             VerticalOptions="Center" />
 
+        <!--Main content scrollview-->
         <ScrollView
             Grid.Row="1"
             Grid.Column="0"
@@ -41,6 +47,7 @@
             <VerticalStackLayout
                 Spacing="18">
 
+                <!--Planet image-->
                 <Image
                     Source="{Binding HeroImage}"
                     Aspect="AspectFit"
@@ -48,32 +55,42 @@
                     HeightRequest="240"
                     Margin="24,0" />
 
+                <!--Planet Name-->
                 <Label
-                    Style="{StaticResource PlanetHeaderStyle}"
-                    Text="{Binding Name}"
-                    Margin="0,-24,0,0"/>
+                    Margin="0,-24,0,0"
+                    Style="{StaticResource AllPlanetHeaderSubtitleStyle}"
+                    Text="{Binding Name}" />
 
+                <!--Planet Subtitle-->
                 <Label
                     Margin="0,-12,0,0"
                     Style="{StaticResource PlanetHeaderSubtitleStyle}"
                     Text="{Binding Subtitle}" />
 
+                <!--Divider-->
+
                 <Rectangle
                     HorizontalOptions="Fill"
                     HeightRequest="2"
                     Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}" />
+
+                <!--Planet info-->
 
                 <Label
-                    Style="{StaticResource PlanetDetailsTextStyle}"
                     LineBreakMode="WordWrap"
+                    Style="{StaticResource PlanetDetailsTextStyle}"
                     Text="{Binding Description}" />
+
+                <!--Divider-->
 
                 <Rectangle
                     HorizontalOptions="Fill"
                     HeightRequest="2"
                     Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}" />
+
+                <!--Planet Images-->
 
                 <Label
                     Style="{StaticResource PlanetHeaderSubtitleStyle}"
@@ -81,13 +98,15 @@
 
                 <CollectionView
                     Margin="0,-6,0,0"
-                    HeightRequest="160"
+                    HeightRequest="400"
+                    WidthRequest="400"
                     ItemsSource="{Binding Images}">
 
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout
-                            Orientation="Horizontal"
-                            ItemSpacing="16" />
+                            Orientation="Vertical"
+                            ItemSpacing="16">
+                        </LinearItemsLayout>
                     </CollectionView.ItemsLayout>
 
                     <CollectionView.ItemTemplate>
@@ -95,14 +114,8 @@
                             <Image
                                 Source="{Binding .}"
                                 Aspect="AspectFill"
-                                HorizontalOptions="Fill"
-                                VerticalOptions="Fill"
-                                WidthRequest="160">
-                                <Image.Clip>
-                                    <RoundRectangleGeometry
-                                        Rect="0,0,160,160"
-                                        CornerRadius="16" />
-                                </Image.Clip>
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
                             </Image>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
@@ -112,7 +125,6 @@
             </VerticalStackLayout>
 
         </ScrollView>
-    </Grid>
 
+    </Grid>
 </ContentPage>
-}

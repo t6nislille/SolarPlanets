@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:SolarPlanets.Models"
-             x:Class="Views.PlanetsPage"
+             x:Class="SolarPlanets.Views.PlanetsPage"
              Title="Planets Page">
     <Grid>
 
@@ -91,6 +91,8 @@
 
             </VerticalStackLayout>
 
+            <!--App picture-->
+
             <Border
                 WidthRequest="56"
                 HeightRequest="56"
@@ -106,8 +108,8 @@
                 </Border.StrokeShape>
 
                 <Border.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ProfilePic_Clicked" />
-                </Border.GestureRecognizers>           
+                    <TapGestureRecognizer Tapped="ApiPic_Clicked" />
+                </Border.GestureRecognizers>
 
                 <Image
                     VerticalOptions="Center"
@@ -124,6 +126,8 @@
                     </Image.Clip>
                 </Image>
             </Border>
+
+            <!--main content scroll-->
 
             <ScrollView
                 Grid.Row="1"
@@ -372,10 +376,7 @@
                         Style="{StaticResource MenuLabelStyle}" />
 
                 </Grid>
-
             </Border>
-
         </Grid>
-
     </Grid>
 </ContentPage>
